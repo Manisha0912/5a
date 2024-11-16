@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function operation(n1,n2,callback){
+    callback(n1,n2)
+}
+function add(n1,n2){
+    console.log(n1+n2)
+}
+const sub=(n1,n2)=>{
+    console.log(n1-n2)
+}
+function mul(n1,n2){
+    console.log(n1*n2)
+}
+function div(n1,n2){
+    console.log(n1/n2)
+}
+const rem=(n1,n2)=>{
+    console.log(n1%n2)
+}
+operation(10,20,add)
+operation(10,20,sub)
+operation(10,20,mul)
+operation(10,20,div)
+operation(10,20,rem)
+    </script>
+</body>
+</html>
